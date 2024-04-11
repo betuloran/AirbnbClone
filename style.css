@@ -1,0 +1,270 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* Navbarı yatay eksende ortalar */
+    align-items: center;
+    /* Navbarı dikey eksende ortalar */
+    background-color: white;
+}
+
+.airbnb-logo {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.airbnb-logo svg {
+    width: 35px;
+    height: 35px;
+}
+
+.nav-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-left: 140px;
+}
+
+.nav-buttons {
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.nav-buttons:hover {
+    background-color: rgb(242, 242, 242);
+    border-radius: 25px;
+    width: max-content;
+    height: 40px;
+    padding: 0 10px 0 10px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+    margin-right: 90px;
+
+}
+
+.alt-menu {
+    width: 85px;
+    height: 48px;
+    background-color: white;
+    border: 1px solid #dbd8d8;
+    /* Kenar çizgisi */
+    border-radius: 25px;
+
+}
+
+.profile-button svg {
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-button {
+    background-color: #58575c;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+
+}
+
+#acilirmenu2 {
+    display: none;
+    /* Chech boxumuzu buradan görünmez kılıyoruz. */
+}
+
+#menum2 {
+    display: none;
+    border-radius: 12px;
+    background-color: white;
+    border: 1px solid #dbd8d8;
+    /* Kenar çizgisi */
+    cursor: pointer;
+    width: 200px;
+    height: 180px;
+    box-shadow: 1px 2px 2px 1px rgba(200, 197, 197, 0.5);
+}
+
+#menum2 p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+#acilirmenu2:checked+#menum2 {
+    display: block;
+}
+
+.search-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-parttwo {
+    display: flex;
+    border-radius: 40px;
+    border: 1px solid #dbd8d8;
+    /* Kenar çizgisi */
+    cursor: pointer;
+    margin-top: 80px;
+    width: 800px;
+    height: 65px;
+    box-shadow: 1px 2px 2px 1px rgba(200, 197, 197, 0.5);
+}
+
+.parts {
+    font-size: 14px;
+}
+
+.parts p {
+    color: rgb(71, 69, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parts:hover {
+    background-color: rgb(230, 228, 228);
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    /* Kenar çizgisi */
+}
+
+.search-button {
+    background-color: #ff4f4f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+}
+
+.search-button svg {
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filters p {
+    color: rgb(144, 140, 140);
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 10px;
+    width: max-content;
+
+}
+
+.filters svg {
+    width: 20px;
+    height: 20px;
+}
+
+.next-button {
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid #a29f9f;
+    /* Kenar çizgisi */
+
+}
+
+.next-button:hover {
+    box-shadow: 2px 4px 12px 2px rgba(200, 197, 197, 0.5);
+}
+
+.next-button svg {
+    width: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border-radius: 12px;
+    border: 1px solid #dbd8d8;
+    /* Kenar çizgisi */
+    width: max-content;
+    padding: 0 17px;
+    height: 50px;
+}
+
+.left-button:hover {
+    border-color: black;
+    background-color: rgb(248, 247, 247);
+}
+
+.filters-button {
+    gap: 20px;
+    display: flex;
+}
+
+.information p {
+    margin-bottom: 3px;
+    font-size: 15px;
+    color: #535050;
+}
+
+.places-item {
+    display: flex;
+    gap: 25px;
+}
+
+.places-box img {
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.places-box h5 {
+    font-size: 15px;
+    color: #000000;
+    transition: linear .2s color;
+}
+
+.suggested {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    height: 27px;
+    width: 145px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size:14px;
+}
+
+.heart-icon-button {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 23px;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: linear .2s all;
+
+}
+.heart-icon-button:hover svg path {
+    fill: white;
+}

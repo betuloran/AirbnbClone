@@ -360,3 +360,23 @@
 .manor p {
     margin: 0;
 }
+.right-column{
+    display: flex;
+    flex-direction:column;
+}
+.right-four svg{
+    width:20px;
+}
+.right-four p{
+    font-size:14px;
+}
+.right-four-triple{
+    display:flex; 
+}
+.right-four{
+    margin-top:20px;
+}
+.right-six svg{
+    width:20px;
+}
+

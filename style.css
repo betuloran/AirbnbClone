@@ -119,10 +119,9 @@
     /* Kenar çizgisi */
     cursor: pointer;
     margin-top: 80px;
-
     box-shadow: 1px 2px 2px 1px rgba(200, 197, 197, 0.5);
+    width: max-content;
 }
-
 
 .parts {
     font-size: 14px;
@@ -133,14 +132,11 @@
     cursor: pointer;
     width: max-content;
     height: max-content;
-
 }
 
 .parts p {
     color: rgb(71, 69, 69);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
 }
 
 .parts:hover {
@@ -190,7 +186,6 @@
     cursor: pointer;
 }
 
-
 .filters svg {
     width: 20px;
     height: 20px;
@@ -199,8 +194,8 @@
 
 .next-button {
     border-radius: 50%;
-    width: 28px;
-    height: 28px;
+    width: 35px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,68 +355,109 @@
 .manor p {
     margin: 0;
 }
-.right-column{
+
+.right-column {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
 }
-.right-four svg{
-    width:20px;
+
+.right-four svg {
+    width: 20px;
 }
-.right-four p{
-    font-size:14px;
+
+.right-four p {
+    font-size: 14px;
 }
-.right-four-triple{
-    display:flex; 
+
+.right-four-triple {
+    display: flex;
 }
-.right-four{
-    margin-top:20px;
+
+.right-four {
+    margin-top: 20px;
 }
-.right-six svg{
-    width:20px;
+
+.right-six svg {
+    width: 20px;
 }
-.right-six p{
-    font-size:15px;
+
+.right-six p {
+    font-size: 15px;
 }
+
 .calendar {
-  font-family: Arial, sans-serif;
-  max-width: 300px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #f0eeee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .month {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-  font-size: 18px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
 }
 
 .days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
 }
 
 .day {
-  background-color: #e6e6e6;
-  padding: 15px;
-  text-align: center;
-  border: 1px solid #ccc;
-  transition: background-color 0.3s ease;
+    background-color: #e6e6e6;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
 }
 
 .day:hover {
-  background-color: #dcdcdc;
+    background-color: #dcdcdc;
 }
-.keyboard svg{
-    width:25px;
-    margin:40px 0 30px 0;
-    float:left;
+
+.calendar-down svg {
+    width: 25px;
+    margin-right: 10px;
 }
-.calendar-down{
-    display:flex;
-  
+
+.calendar-down a {
+    margin-left: 10px;
+    color: black;
+
+}
+
+.calendar-down {
+    display: flex;
+
+}
+.calendar {
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #f0eeee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.evaluation svg{
+    width:30px;
+    height:30px;
+}
+
+.evaluations {
+    display: flex;
+}
+.evaluation {
+    flex: 0 0 calc(100% / 6); /* 6 eşit parçaya bölmek için */
+    background-color: none;
+    border: none;
+    text-align: left;
+    box-sizing: border-box;
 }
 

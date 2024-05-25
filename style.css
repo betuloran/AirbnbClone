@@ -461,3 +461,22 @@
     box-sizing: border-box;
 }
 
+.homeowner{
+    background-color: rgb(243, 242, 242);
+    border-radius:20px;
+    width: 1200px; height:400px;
+   
+}
+.homeowner-left-top{
+    background-color: white;
+    border-radius:28px;
+    width:360px;height:220px;
+    margin-top:50px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+   
+}
+.homeowner-right-bottom svg{
+    width:20px;
+    height:20px;
+    margin-right:10px;
+}

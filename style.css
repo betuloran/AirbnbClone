@@ -349,6 +349,27 @@
 
 .right-four svg {
     width: 20px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+
+.buton-grayhover:hover {
+    background-color: rgb(237, 235, 235);
+}
+
+.buton-grayhover {
+    background-color: white;
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+    border: 1px solid black;
+    margin: 20px 0 20px 0;
+}
+.translate{
+ background-color: #f6f6f6;
+ margin:30px;
+ height:55px;
+ border-radius:7px;
 }
 
 .right-four p {
@@ -360,15 +381,26 @@
 }
 
 .right-four {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom:10px;
 }
 
-.right-six svg {
-    width: 20px;
+.feature-item {
+    display: flex;
+    align-items: center;
+    
 }
 
+.feature-item p{
+    margin-left: 14px;
+    margin-top:8px;
+}
+
+.right-six svg,img {
+    width: 24px;
+}
 .right-six p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .calendar {
@@ -439,6 +471,7 @@
 
 .evaluations {
     display: flex;
+    
 }
 
 .evaluation {
@@ -447,7 +480,7 @@
     background-color: none;
     border: none;
     text-align: left;
-    box-sizing: border-box;
+    box-sizing: border-box;margin-left:20px;
 }
 
 .homeowner {
@@ -525,7 +558,8 @@
     width: 600px;
     height: 380px;
     object-fit: cover;
-    
+    border-radius: 15px;
+    /* Kenarları yuvarlatmak için */
 }
 
 .small-image {
@@ -533,7 +567,10 @@
     height: 182px;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 15px;
+    /* Kenarları yuvarlatmak için */
 }
+
 .suggested {
     display: flex;
     justify-content: center;
@@ -546,9 +583,11 @@
     left: 20px;
     top: 15px;
 }
-.suggested:hover{
-    background-color:rgb(230, 230, 230);
+
+.suggested:hover {
+    background-color: rgb(230, 230, 230);
 }
+
 .suggested p {
     margin-top: 14px;
     color: rgb(51, 49, 49);

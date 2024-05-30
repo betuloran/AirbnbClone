@@ -57,24 +57,33 @@
     list-style: none;
     /* Noktalı liste işaretlerini gizle */
     background-color: white;
-    border-radius: 50px;
+    border-radius: 20px;
     border-color: #a29f9f;
-
+    font-size: 15px;
+    text-align: left;
+    /* Liste öğelerini sola yasla */
+    padding-left: 10px;
+    /* Sol boşluğu kaldır */
+    width: 230px;
+    height: 200px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .menu a {
     text-decoration: none;
     color: #000000;
-}
-
-.menu li {
-    margin: 10px;
+    display: block;
+    /* Linkleri blok olarak göster */
+    padding: 5px;
+    /* Linklere iç boşluk ekle */
 }
 
 .menu1 {
-    border-radius: 40px;
+    border-radius: 10px;
     border-color: #ece6e6;
-
+    position: relative;
+    /* Menü konumlandırması için gerekli */
 }
 
 .menu-toggle {
@@ -82,15 +91,19 @@
     /* İkona tıklanabilir bir imleç ver */
 }
 
+
 .menu-toggle:hover+.menu {
     display: block;
     /* Menü açılacak */
     position: absolute;
     /* Menüyü konteynırın üstüne yerleştir */
-    top: 70%;
+    top: 120%;
     /* Menüyü butonun altına yerleştir */
-    right: 80px;
+    right: 0;
+    /* Menüyü sola hizala */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .search-parttwo {
     display: flex;
@@ -365,11 +378,12 @@
     border: 1px solid black;
     margin: 20px 0 20px 0;
 }
-.translate{
- background-color: #f6f6f6;
- margin:30px;
- height:55px;
- border-radius:7px;
+
+.translate {
+    background-color: #f6f6f6;
+    margin: 30px;
+    height: 55px;
+    border-radius: 7px;
 }
 
 .right-four p {
@@ -382,23 +396,25 @@
 
 .right-four {
     margin-top: 40px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .feature-item {
     display: flex;
     align-items: center;
-    
+
 }
 
-.feature-item p{
+.feature-item p {
     margin-left: 14px;
-    margin-top:8px;
+    margin-top: 8px;
 }
 
-.right-six svg,img {
+.right-six svg,
+img {
     width: 24px;
 }
+
 .right-six p {
     font-size: 16px;
 }
@@ -471,16 +487,19 @@
 
 .evaluations {
     display: flex;
-    
+    align-items: center;
 }
 
 .evaluation {
-    flex: 0 0 calc(100% / 6);
-    /* 6 eşit parçaya bölmek için */
     background-color: none;
     border: none;
-    text-align: left;
-    box-sizing: border-box;margin-left:20px;
+    flex-direction: column;
+    /* Flex yönünü dikey yapar */
+    align-items: flex-start;
+    /* İçerikleri sola hizalar */
+    margin-left: 20px;
+    display: flex;
+    margin-right: 80px;
 }
 
 .homeowner {
@@ -592,4 +611,13 @@
     margin-top: 14px;
     color: rgb(51, 49, 49);
     font-size: 13px;
+}
+
+.history {
+    width:370px;height:300px;
+border-radius:15px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    float:right;
+    margin:20px;
+    
 }
